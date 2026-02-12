@@ -30,7 +30,8 @@ export class NavbarComponent {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Contact', path: '/contact' },
+    { name: 'Admin', path: '/admin' } // Admin link goes to login page
   ];
 
   constructor(private router: Router) {}

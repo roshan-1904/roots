@@ -1,9 +1,26 @@
-<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <!-- Logo/Brand -->
+<style>
+    .logo-block {
+      background-color: #4caf4f00;
+      width: 300px; 
+      padding: 2px; 
+      text-align: center; 
+      border-radius: 10px; 
+    }
+
+    .logo-block img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+<nav class="fixed top-0 left-0 w-full bg-pink-500 shadow-md z-50">
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-7">
+    <div class="flex justify-between items-center h-17">
+      
+        <div class="logo-block">
+    <img src="https://rootsclinics.in/wp-content/uploads/2025/02/logo-white-1.png" alt="Roots Clinic Logo">
+  </div>
       <a routerLink="/" class="flex-shrink-0 text-2xl font-extrabold text-blue-800">
-        Roots Clinic
+  
       </a>
 
       <!-- Desktop Menu -->
@@ -15,14 +32,8 @@
           class="text-gray-700 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
           {{ link.name }}
         </a>
-        <button
-          [routerLink]="['/appointment']"
-          class="bg-sky-600 text-white px-4 py-2 rounded-md text-sm font-medium shadow-md hover:bg-sky-700 transition-colors duration-200">
-          Book Appointment
-        </button>
       </div>
-
-      <!-- Mobile Menu Button -->
+    
       <div class="-mr-2 flex md:hidden">
         <button (click)="toggleMenu()" type="button"
           class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-sky-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
@@ -48,11 +59,7 @@
         class="text-gray-700 hover:bg-gray-50 hover:text-sky-600 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">
         {{ link.name }}
       </a>
-      <button
-        [routerLink]="['/appointment']"
-        class="w-full bg-sky-600 text-white px-3 py-2 rounded-md text-base font-medium shadow-md hover:bg-sky-700 transition-colors duration-200 mt-2">
-        Book Appointment
-      </button>
     </div>
   </div>
 </nav>
+
