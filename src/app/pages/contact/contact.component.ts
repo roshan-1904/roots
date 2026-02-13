@@ -23,7 +23,7 @@ export class ContactComponent {
     if (form.valid) {
       try {
         // Replace with your backend API URL
-        const backendUrl = 'http://localhost:5000/api/contact'; // Assuming backend runs on port 5000
+        const backendUrl = 'https://intizaar.onrender.com/api/contact'; // Assuming backend runs on port 5000
 
         const response = await this.http.post(backendUrl, this.contact).toPromise();
         console.log('Backend response:', response);
